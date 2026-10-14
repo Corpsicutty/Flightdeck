@@ -1,0 +1,9 @@
+{
+  "name": "flightdeck",
+  "private": true,
+  "description": "Flight Deck — disc golf bag tracker (static site)",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "npx --yes serve -l 8765 ."
+  }
+}

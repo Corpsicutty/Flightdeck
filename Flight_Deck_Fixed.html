@@ -612,7 +612,7 @@ function mapAll(on){mapScope.forEach(function(d){mapHide[d.id]=!on});if(on&&mapS
 function toggleHand(){var fh=mapThrow.slice(2)==='FH',rh=mapThrow.slice(0,2)==='RH';setMapThrow((rh?'LH':'RH')+(fh?'FH':'BH'))}
 function toggleFore(){setMapThrow(mapThrow.slice(0,2)+(mapThrow.slice(2)==='FH'?'BH':'FH'))}
 function setSpeedBand(k){setPower(k==='slow'?280:k==='fast'?400:330)}
-function dockIco(name){return '<span class="mico" style="--ico:url(\'icons/'+name+'.png\')"></span>'}
+function dockIco(name){return '<span class="mico" style="--ico:url(\'/icons/'+name+'.png\')"></span>'}
 function handIcon(right){return dockIco(right?'lh':'rh')}
 function angleIcon(deg){return dockIco(deg<0?'hyzer':deg>0?'anhyzer':'flat')}
 function speedIcon(n){return dockIco(n>=3?'fast':n<=1?'slow':'neutral')}
